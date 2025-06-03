@@ -38,7 +38,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.1.0'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.1'
 }
 
 jar {
@@ -60,4 +60,3 @@ jar {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
-
