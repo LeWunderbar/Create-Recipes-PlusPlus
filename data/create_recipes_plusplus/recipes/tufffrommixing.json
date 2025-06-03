@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "count": 2,
+      "item": "minecraft:andesite"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:diorite"
+    },
+    {
+      "amount": 50,
+      "fluid": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:tuff"
+    }
+  ]
+}

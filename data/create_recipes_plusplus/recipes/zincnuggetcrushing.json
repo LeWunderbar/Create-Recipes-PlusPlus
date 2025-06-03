@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:scoria"
+    }
+  ],
+  "processingTime": 1000,
+  "results": [
+    {
+      "chance": 0.25,
+      "item": "create:zinc_nugget"
+    }
+  ]
+}

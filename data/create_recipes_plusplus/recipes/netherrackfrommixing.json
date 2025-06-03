@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:andesite",
+      "count": 2
+    },
+    {
+      "item": "minecraft:nether_wart",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:netherrack"
+    }
+  ],
+  "heatRequirement": "heated"
+}

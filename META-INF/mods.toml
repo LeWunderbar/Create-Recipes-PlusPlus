@@ -1,0 +1,18 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="create_recipes_plusplus"
+version="1.0.0"
+displayName="Create: Recipes++"
+displayURL="https://modrinth.com/mod/create-recipes++"
+credits="Based on Create mod by simibubi and contributors""
+authors="m23@modrinth, Maxeltek_HD@minecraft"
+
+[[dependencies.create_recipes]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
