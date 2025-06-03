@@ -4,6 +4,11 @@ plugins {
     id 'maven-publish'
 }
 
+repositories {
+    maven { url = 'https://maven.minecraftforge.net/' }
+    mavenCentral()
+}
+
 group = 'com.m23'
 version = '1.0.0'
 archivesBaseName = 'create_recipes_plusplus'
