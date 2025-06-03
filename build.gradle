@@ -1,0 +1,58 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '6.0.+'
+    id 'eclipse'
+    id 'maven-publish'
+}
+
+group = 'com.m23'
+version = '1.0.0'
+archivesBaseName = 'create_recipes_plusplus'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    runs {
+        client {
+            workingDirectory = project.file('run')
+            mods {
+                create_recipes_plusplus {
+                    source sourceSets.main
+                }
+            }
+        }
+        server {
+            workingDirectory = project.file('run_server')
+            mods {
+                create_recipes_plusplus {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.1.0'
+}
+
+jar {
+    manifest {
+        attributes([
+            'Specification-Title': 'create_recipes_plusplus',
+            'Specification-Version': version,
+            'Implementation-Title': 'Create: Recipes++',
+            'Implementation-Version': version,
+            'Implementation-Vendor': 'm23@modrinth, Maxeltek_HD@minecraft'
+        ])
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+

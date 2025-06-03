@@ -1,4 +1,4 @@
-/*    */ package net.mcreator.createrecipesplusplus;
+/*    */ package com.m23.create_recipes_plusplus;
 /*    */ 
 /*    */ import java.util.AbstractMap;
 /*    */ import java.util.ArrayList;
